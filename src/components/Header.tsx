@@ -10,11 +10,7 @@ const Header = () => {
         <nav>
           {navLinks &&
             navLinks.map((item) => (
-              <Link
-                key={item.id}
-                href={item.path}
-                className="text-xl font-bold hover:text-[var(--secondary)] "
-              >
+              <Link key={item.id} href={item.path} className="nav-link">
                 {item.name}
               </Link>
             ))}
@@ -28,7 +24,7 @@ const Header = () => {
                 key={icon.id}
                 href={icon.url}
               >
-                <Image src={icon.icon} alt="Github icon" />
+                <Image className="w-6 h-6" src={icon.icon} alt="Github icon" />
               </Link>
             ))}
         </div>
