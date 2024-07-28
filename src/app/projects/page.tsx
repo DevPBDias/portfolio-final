@@ -9,6 +9,7 @@ const ProjectsPage = () => {
       <section className=" flex flex-col justify-center items-start gap-6 w-64">
         <h3 className="font-bold text-2xl">Projetos</h3>
         <div className=" flex flex-col justify-center items-start gap-3">
+          <p className="border-b-[var(--secondary)] border-b-2">Todos</p>
           {projects.map((item) => (
             <p className="hover:text-[var(--secondary)]" key={item.type}>
               Projetos {item.type}

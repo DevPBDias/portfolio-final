@@ -7,7 +7,7 @@ const ProjectCard = ({ data }: ProjectData | any) => {
   return (
     <div
       key={data.id}
-      className="flex flex-row justify-center items-center h-80 border-2 border-white rounded-lg"
+      className="flex flex-row justify-center items-center h-80"
     >
       <picture className="w-1/2 h-full">
         <Image className="w-full h-full" src={data.image} alt="Project image" />
