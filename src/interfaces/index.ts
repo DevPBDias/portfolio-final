@@ -10,3 +10,11 @@ export interface IconsHeader {
     icon: StaticImageData,
     url: string,
 }
+
+export interface ProjectData {
+    id: number,
+    image: StaticImageData,
+    title: string,
+    description: string,
+    stacks: StaticImageData[],
+}

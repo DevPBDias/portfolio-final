@@ -11,10 +11,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col justify-between items-start w-full mt-16 gap-4">
         <h3 className="text-2xl font-bold">Projetos de destaque</h3>
-        <div className="flex flex-row justify-between items-center w-full">
-          <ProjectCardHome />
-          <ProjectCardHome />
-          <ProjectCardHome />
+        <div className="flex flex-row justify-between items-center w-full gap-6">
           <ProjectCardHome />
         </div>
       </section>
