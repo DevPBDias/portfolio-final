@@ -9,5 +9,14 @@
   --text-color-secondary: #858786;
 }
 
+* {
+  background: var(--background);
+  color: var(--text-color-primary);
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 @layer utilities {
 }
