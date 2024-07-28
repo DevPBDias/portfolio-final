@@ -7,15 +7,49 @@
   --text-color-primary: #fffcf2;
   --secondary: #f0a202;
   --text-color-secondary: #858786;
+  --padding-header: 120px;
+  --padding-content: 262px;
+  --fit-content: fit-content;
 }
 
-* {
+body {
   background: var(--background);
   color: var(--text-color-primary);
   box-sizing: border-box;
+  font-size: 16px;
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+h1,
+button,
+a {
+  min-width: fit-content;
+}
+
+@layer base {
+  header {
+    @apply flex w-full justify-center items-center h-20;
+  }
+
+  h1 {
+    @apply text-[var(--secondary)] font-bold uppercase italic text-xl;
+  }
+
+  nav {
+    @apply flex flex-row w-full justify-center items-center h-full gap-6;
+  }
+}
+
+@layer components {
+  .container-header {
+    @apply flex flex-row p-[var(--padding-header)] w-full justify-between items-center h-full;
+  }
+
+  .container-icons {
+    @apply flex flex-row justify-center items-center h-full gap-4;
+  }
 }
 
 @layer utilities {
