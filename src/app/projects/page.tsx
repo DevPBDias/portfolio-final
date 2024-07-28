@@ -1,7 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/constants";
 import { ProjectData } from "@/interfaces";
-import React from "react";
 
 const ProjectsPage = () => {
   return (

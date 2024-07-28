@@ -12,6 +12,7 @@ import tailwind from "../../public/assets/icons/Tailwind CSS.png";
 import ts from "../../public/assets/icons/TypeScript.png";
 import styled from "../../public/assets/icons/styled.png";
 import model from "../../public/assets/images/model.png";
+import { StaticImageData } from "next/image";
 
 export const navLinks: INavLinks[] = [
     {
@@ -46,6 +47,7 @@ export const iconsHeader: IconsHeader[] = [
         url: 'https://www.linkedin.com/in/devpaulobrunomdias/'
     }
 ]
+
 export const projects: ProjectData[] = [
     {
         id: 1,
@@ -79,4 +81,8 @@ export const projects: ProjectData[] = [
         description: 'Lorem ipsum dolor sit amet consectetur. Bibendum felis felis bibendum nulla vel a vel pretium.',
         stacks: [react, next, node, js, css, html, mongo],
     },
+]
+
+export const devStacks: StaticImageData[] = [
+    react, next, node, js, css, html, mongo, ts, tailwind, styled
 ]
