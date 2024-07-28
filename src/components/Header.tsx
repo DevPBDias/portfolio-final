@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import { iconsHeader, navLinks } from "@/constants";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+
   return (
     <header>
       <section className="container-header">
@@ -10,7 +15,13 @@ const Header = () => {
         <nav>
           {navLinks &&
             navLinks.map((item) => (
-              <Link key={item.id} href={item.path} className="nav-link">
+              <Link
+                key={item.id}
+                href={item.path}
+                className={`nav-link ${
+                  pathname === item.path ? "text-[var(--secondary)]" : ""
+                }`}
+              >
                 {item.name}
               </Link>
             ))}

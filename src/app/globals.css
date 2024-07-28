@@ -5,8 +5,9 @@
 :root {
   --background: linear-gradient(to right, #000428, #004e92);
   --text-color-primary: #fffcf2;
+  --text-color-secondary: #111111;
   --secondary: #f0a202;
-  --text-color-secondary: #858786;
+  --text-color-terciary: #858786;
   --padding-header: 120px;
   --padding-content: 262px;
   --fit-content: fit-content;
@@ -38,13 +39,13 @@ a {
   }
 
   nav {
-    @apply flex flex-row w-full justify-center items-center h-full gap-6;
+    @apply flex flex-row w-full justify-center items-center h-full gap-12;
   }
 }
 
 @layer components {
   .container-header {
-    @apply flex flex-row p-[var(--padding-header)] w-full justify-between items-center h-full;
+    @apply flex flex-row px-[var(--padding-header)] w-full justify-between items-center h-full;
   }
 
   .container-icons {
@@ -53,6 +54,10 @@ a {
 
   .nav-link {
     @apply text-xl font-bold hover:text-[var(--secondary)];
+  }
+
+  .container-main {
+    @apply flex flex-col px-[var(--padding-content)] py-16 w-full justify-between items-center h-full;
   }
 }
 

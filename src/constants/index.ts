@@ -11,15 +11,15 @@ export const navLinks: INavLinks[] = [
     {
         id: 2,
         name: 'Sobre',
-        path: '/'
+        path: '/about'
     },    {
         id: 3,
         name: 'Projetos',
-        path: '/'
+        path: '/projects'
     },    {
         id: 4,
         name: 'CV',
-        path: '/'
+        path: '/curriculum'
     },
 ]
 
