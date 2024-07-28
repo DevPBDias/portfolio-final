@@ -1,8 +1,5 @@
 import Image from "next/image";
-import devLogo from "../../public/assets/images/devLogo.png";
-import github from "../../public/assets/icons/GithubLogo.png";
-import linkedin from "../../public/assets/icons/LinkedinLogo.png";
-import { navLinks } from "@/constants/navLinks";
+import { iconsHeader, navLinks } from "@/constants";
 import Link from "next/link";
 
 const Header = () => {
@@ -23,8 +20,17 @@ const Header = () => {
             ))}
         </nav>
         <div className="container-icons">
-          <Image src={github} alt="Github icon" />
-          <Image src={linkedin} alt="Linkedin icon" />
+          {iconsHeader &&
+            iconsHeader.map((icon) => (
+              <Link
+                target="_blank"
+                rel="noreferrer noopener"
+                key={icon.id}
+                href={icon.url}
+              >
+                <Image src={icon.icon} alt="Github icon" />
+              </Link>
+            ))}
         </div>
       </section>
     </header>
