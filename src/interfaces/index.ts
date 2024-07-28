@@ -13,6 +13,7 @@ export interface IconsHeader {
 
 export interface ProjectData {
     id: number,
+    type: string,
     image: StaticImageData,
     title: string,
     description: string,

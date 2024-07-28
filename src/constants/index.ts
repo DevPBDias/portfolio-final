@@ -49,6 +49,7 @@ export const iconsHeader: IconsHeader[] = [
 export const projects: ProjectData[] = [
     {
         id: 1,
+        type: 'Trybe',
         image: model,
         title: 'Nome do projeto',
         description: 'Lorem ipsum dolor sit amet consectetur. Bibendum felis felis bibendum nulla vel a vel pretium.',
@@ -56,6 +57,7 @@ export const projects: ProjectData[] = [
     },
     {
         id: 2,
+        type: 'Freelancer',
         image: model,
         title: 'Nome do projeto',
         description: 'Lorem ipsum dolor sit amet consectetur. Bibendum felis felis bibendum nulla vel a vel pretium.',
@@ -63,6 +65,7 @@ export const projects: ProjectData[] = [
     },
     {
         id: 3,
+        type: 'Em grupo',
         image: model,
         title: 'Nome do projeto',
         description: 'Lorem ipsum dolor sit amet consectetur. Bibendum felis felis bibendum nulla vel a vel pretium.',
@@ -70,6 +73,7 @@ export const projects: ProjectData[] = [
     },
     {
         id: 4,
+        type: 'Pessoal',
         image: model,
         title: 'Nome do projeto',
         description: 'Lorem ipsum dolor sit amet consectetur. Bibendum felis felis bibendum nulla vel a vel pretium.',
