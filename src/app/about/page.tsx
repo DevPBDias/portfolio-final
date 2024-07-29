@@ -34,8 +34,12 @@ const About = () => {
           </p>
         </div>
       </section>
-      <picture className="my-16">
-        <Image src={timeline} alt="timeline dev" />
+      <picture className="w-full my-28">
+        <Image
+          className="object-cover w-full"
+          src={timeline}
+          alt="timeline dev"
+        />
       </picture>
       <section className="flex flex-col justify-center items-start gap-6 w-full">
         <h3 className="font-bold text-2xl">Habilidades</h3>
