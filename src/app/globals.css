@@ -5,6 +5,7 @@
 :root {
   --background: linear-gradient(to bottom, #000428, #004e92);
   --text-color-primary: #fffcf2;
+  --text-color-primary-soft: #e6e3db;
   --text-color-secondary: #111111;
   --secondary: #f0a202;
   --text-color-terciary: #858786;
@@ -12,6 +13,7 @@
   --padding-content: 262px;
   --bg-soft: #2489e2;
   --bg-darker: #185e9b;
+  --trybe: #21e54d;
 }
 
 /* * {
