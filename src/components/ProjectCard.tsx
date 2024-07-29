@@ -18,16 +18,16 @@ const ProjectCard = ({ data }: ProjectData | any) => {
           {data.description}
         </p>
         <div className="flex flex-row  justify-between items-center w-full">
-          <div className="flex flex-row flex-wrap justify-start items-center w-44 gap-4">
+          <picture className="flex flex-row flex-wrap justify-start items-start w-44 gap-2">
             {data.stacks.map((tech: string, index: number) => (
               <Image
-                className="w-10 h-10"
+                className="w-12 h-10"
                 key={index}
                 src={tech}
                 alt="stack icon"
               />
             ))}
-          </div>
+          </picture>
           <Link
             href="/"
             className="flex flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg mt-auto gap-2"
