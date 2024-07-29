@@ -23,7 +23,10 @@ const ProjectCard = ({ data }: ProjectData | any) => {
             {data.year}
           </p>
         </div>
-        <p className="text-sm text-[var(--text-color-terciary)]">
+        <p className="text-xs text-[var(--text-color-terciary)] ">
+          {data.inGroup ? "Em grupo" : "Individual"}
+        </p>
+        <p className="text-sm text-[var(--text-color-primary)]">
           {data.description}
         </p>
         <section className="flex flex-row flex-wrap justify-start items-start gap-2 mt-3">
@@ -40,7 +43,7 @@ const ProjectCard = ({ data }: ProjectData | any) => {
           target="_blank"
           rel="noreferrer noopener"
           href={data.link}
-          className="flex flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg mt-auto gap-2"
+          className="flex flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg my-auto gap-2"
         >
           <p className="text-[var(--text-color-secondary)] font-bold">
             Saiba mais
