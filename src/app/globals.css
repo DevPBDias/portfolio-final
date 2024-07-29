@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: linear-gradient(to right, #000428, #004e92);
+  --background: linear-gradient(to bottom, #000428, #004e92);
   --text-color-primary: #fffcf2;
   --text-color-secondary: #111111;
   --secondary: #f0a202;
   --text-color-terciary: #858786;
   --padding-header: 120px;
   --padding-content: 262px;
-  --fit-content: fit-content;
+  --bg-soft: #2489e2;
 }
+
+/* * {
+  border: #fffcf2 1px solid;
+} */
 
 body {
   background: var(--background);

@@ -15,7 +15,10 @@ export interface ProjectData {
     id: number,
     type: string,
     image: StaticImageData,
-    title: string,
+    inGroup: boolean,
     description: string,
-    stacks: StaticImageData[],
+    name: string,
+    year: number,
+    link: string,
+    techs: string[]
 }

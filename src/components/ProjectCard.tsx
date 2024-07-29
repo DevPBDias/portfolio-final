@@ -29,6 +29,8 @@ const ProjectCard = ({ data }: ProjectData | any) => {
             ))}
           </picture>
           <Link
+            target="_blank"
+            rel="noreferrer noopener"
             href="/"
             className="flex flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg mt-auto gap-2"
           >
