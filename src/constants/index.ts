@@ -10,7 +10,7 @@ import node from "../../public/assets/icons/Nodejs.png";
 import react from "../../public/assets/icons/React.png";
 import tailwind from "../../public/assets/icons/Tailwind CSS.png";
 import ts from "../../public/assets/icons/TypeScript.png";
-import styled from "../../public/assets/icons/styled.png";
+import styled from "../../public/assets/icons/Styled.png";
 import oleImg from '../../public/assets/images/ole.png'
 import coachImg from '../../public/assets/images/coach.png'
 import recipeApp from '../../public/assets/images/recipeApp.png'
