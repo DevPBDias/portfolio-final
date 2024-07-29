@@ -29,14 +29,16 @@ const ProjectsPage = () => {
           <button
             type="button"
             onClick={() => setSelectedProjects(projects)}
-            className="hover:text-[var(--secondary)]"
+            className={`focus:border-b-[var(--secondary)] focus:border-b-2 ${
+              !clicked ? "border-b-[var(--secondary)] border-b-2" : ""
+            }`}
           >
             Todos
           </button>
           {allTypes.map((item) => (
             <button
               type="button"
-              className="hover:text-[var(--secondary)]"
+              className="focus:border-b-[var(--secondary)] focus:border-b-2 hover:text-[var(--secondary)]"
               key={item}
               onClick={() => handleTypes(item)}
             >
