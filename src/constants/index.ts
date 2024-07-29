@@ -30,15 +30,12 @@ export const navLinks: INavLinks[] = [
         id: 2,
         name: 'Sobre',
         path: '/about'
-    },    {
+    },   
+     {
         id: 3,
         name: 'Projetos',
         path: '/projects'
-    },    {
-        id: 4,
-        name: 'CV',
-        path: '/curriculum'
-    },
+    },   
 ]
 
 export const iconsHeader: IconsHeader[] = [

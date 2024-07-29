@@ -13,8 +13,10 @@ const HeroContent = () => {
         cotidiana das pessoas.
       </p>
       <Link
+        target="_blank"
+        rel="noreferrer noopener"
         className="bg-[var(--secondary)] text-xl font-bold text-[var(--text-color-secondary)] px-7 py-1 rounded-lg shadow-sm mt-9"
-        href="/curriculum"
+        href="/CV-Dev-Paulo-Bruno.pdf"
       >
         Ler CV
       </Link>

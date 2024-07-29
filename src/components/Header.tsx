@@ -25,6 +25,14 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+          <Link
+            target="_blank"
+            rel="noreferrer noopener"
+            className="nav-link"
+            href="/CV-Dev-Paulo-Bruno.pdf"
+          >
+            CV
+          </Link>
         </nav>
         <div className="container-icons">
           {iconsHeader &&
