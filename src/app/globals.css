@@ -64,7 +64,23 @@ a {
   }
 
   .container-main {
-    @apply flex flex-col px-[var(--padding-content)] py-16 w-full justify-between items-center h-full;
+    @apply flex flex-col justify-center p-5 lg:px-[var(--padding-content)] lg:py-16 w-full lg:justify-between items-center;
+  }
+
+  .container-hero {
+    @apply flex flex-col-reverse gap-6 justify-center lg:flex-row lg:justify-between items-center w-full;
+  }
+
+  .container-home-projects {
+    @apply flex flex-col justify-between items-start w-full mt-16 gap-4;
+  }
+
+  .grid-projects {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+
+  .container-home-projects {
+    @apply flex flex-col justify-between items-start w-full mt-16 gap-4;
   }
 }
 

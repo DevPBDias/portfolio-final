@@ -10,7 +10,7 @@ const ProjectCardHome = ({ data }: ProjectData | any) => {
         rel="noreferrer noopener"
         href={data.link}
         key={data.id}
-        className="flex flex-col justify-start items-center"
+        className="flex flex-col justify-start items-center gap-1"
       >
         <picture className="w-full h-52 rounded-lg">
           <Image
@@ -21,7 +21,7 @@ const ProjectCardHome = ({ data }: ProjectData | any) => {
         </picture>
         <div className="flex flex-col px-3 py-2 justify-center items-start gap-3 w-full">
           <div className="flex flex-row justify-between items-center w-full">
-            <h4 className="text-base font-semibold">{data.name}</h4>
+            <h4 className="font-semibold">{data.name}</h4>
             <p className="border-[var(--text-color-primary)] px-1 text-xs border-b-2">
               {data.type}
             </p>
