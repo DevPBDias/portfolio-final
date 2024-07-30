@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header>
       <section className="container-header">
-        <h1>Dev PBDias</h1>
+        <h1 className="text-base mr-auto">Dev PBDias</h1>
         <nav>
           {navLinks &&
             navLinks.map((item) => (
