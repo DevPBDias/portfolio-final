@@ -7,18 +7,18 @@ const ProjectCard = ({ data }: ProjectData | any) => {
   return (
     <div
       key={data.id}
-      className="flex flex-row justify-center items-center h-80"
+      className="flex flex-col lg:flex-row justify-center items-center lg:h-80 border-b-2 border-b-[var(--text-color-terciary)] lg:border-none"
     >
-      <picture className="w-1/2 h-full">
+      <picture className="w-full h-60 lg:w-1/2 lg:h-full">
         <Image
-          className="w-full h-full rounded-lg"
+          className="w-full h-full rounded-lg object-cover"
           src={data.image}
           alt="Project image"
         />
       </picture>
-      <section className="flex flex-col px-5 py-8 justify-start items-start gap-3 w-1/2 h-full ">
+      <section className="flex flex-col px-3 lg:px-5 py-3 lg:py-8 justify-start items-start gap-3 w-full lg:w-1/2 h-full ">
         <div className="flex flex-row justify-between items-center w-full">
-          <h4 className="text-xl font-semibold">{data.name}</h4>
+          <h4 className="text-lg lg:text-xl font-semibold">{data.name}</h4>
           <p className="border-[var(--bg-soft)] px-2 text-xs border-b-2">
             {data.year}
           </p>
@@ -29,7 +29,7 @@ const ProjectCard = ({ data }: ProjectData | any) => {
         <p className="text-sm text-[var(--text-color-primary)]">
           {data.description}
         </p>
-        <section className="flex flex-row flex-wrap justify-start items-start gap-2 mt-3">
+        <section className="flex flex-row flex-wrap justify-start items-start gap-2 mt-1 lg:mt-3">
           {data.techs.map((tech: string, index: number) => (
             <p
               key={index}
@@ -43,7 +43,7 @@ const ProjectCard = ({ data }: ProjectData | any) => {
           target="_blank"
           rel="noreferrer noopener"
           href={data.link}
-          className="flex flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg my-auto gap-2"
+          className="flex w-full flex-row bg-[var(--secondary)] items-center justify-center py-1 px-2 rounded-lg my-auto gap-2"
         >
           <p className="text-[var(--text-color-secondary)] font-bold">
             Saiba mais

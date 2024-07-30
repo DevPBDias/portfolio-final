@@ -22,10 +22,10 @@ const ProjectsPage = () => {
   };
 
   return (
-    <main className="flex flex-row px-[var(--padding-content)] py-16 w-full justify-between items-start min-h-dvh gap-44">
-      <section className=" flex flex-col justify-center items-start gap-6 w-96">
-        <h3 className="font-bold text-2xl">Projetos</h3>
-        <div className=" flex flex-col justify-center items-start gap-3 w-full">
+    <main className="flex flex-col lg:flex-row px-5 lg:px-[var(--padding-content)] py-9 lg:py-16 w-full justify-between items-start min-h-dvh gap-7 lg:gap-44">
+      <section className=" flex flex-col justify-center items-start gap-6 w-full lg:w-96">
+        <h3 className="font-bold text-xl lg:text-2xl">Projetos</h3>
+        <div className=" flex flex-row lg:flex-col flex-wrap justify-start items-center lg:justify-center lg:items-start gap-5 lg:gap-3 w-full">
           <button
             type="button"
             onClick={() => setSelectedProjects(projects)}
