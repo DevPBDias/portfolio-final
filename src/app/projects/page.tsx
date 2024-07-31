@@ -22,9 +22,9 @@ const ProjectsPage = () => {
   };
 
   return (
-    <main className="flex flex-col lg:flex-row px-5 lg:px-[var(--padding-content)] py-9 lg:py-16 w-full justify-between items-start min-h-dvh gap-7 lg:gap-44">
-      <section className=" flex flex-col justify-center items-start gap-6 w-full lg:w-96">
-        <h3 className="font-bold text-xl lg:text-2xl">Projetos</h3>
+    <main className="flex flex-col xl:flex-row px-5 lg:px-[12.5%] py-9 xl:py-16 w-full justify-between items-start min-h-dvh gap-7 xl:gap-28 2xl:gap-40">
+      <section className=" flex flex-col justify-center items-start gap-6 w-full xl:w-96">
+        <h3 className="font-bold text-xl xl:text-2xl">Projetos</h3>
         <div className=" flex flex-row lg:flex-col flex-wrap justify-start items-center lg:justify-center lg:items-start gap-5 lg:gap-3 w-full">
           <button
             type="button"
