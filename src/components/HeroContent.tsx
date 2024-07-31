@@ -8,8 +8,9 @@ const HeroContent = () => {
         Desenvolvedor web
       </h2>
       <p className="2xl:text-base text-sm text-[var(--text-color-terciary)]">
-        Apaixonado por soluções criativas e inovaddoras que facilitem a vida
-        cotidiana das pessoas.
+        Desenvolvedor com sólidos conhecimento em React, Nextjs, Node,
+        Typescript e Figma. Apaixonado por soluções criativas e inovadoras que
+        facilitem a vida cotidiana das pessoas.
       </p>
       <Link
         target="_blank"
