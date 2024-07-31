@@ -1,14 +1,15 @@
 import Image from "next/image";
 import timeline from "../../../public/assets/images/Timeline.png";
+import timelineMobile from "../../../public/assets/images/TimelineMobile.png";
 import { devStacks } from "@/constants";
 import LinkTrybe from "@/components/LinkTrybe";
 
 const About = () => {
   return (
-    <main className="flex flex-col px-[var(--padding-content)] py-16 w-full justify-center items-center">
+    <main className="flex flex-col-reverse lg:flex-col px-5 lg:px-[12.5%] py-16 w-full justify-center items-center">
       <section className=" flex flex-col justify-center items-start gap-6 w-full">
         <h3 className="font-bold text-2xl">Um pouco da minha história ...</h3>
-        <div className=" flex flex-row justify-between items-center gap-11">
+        <div className=" flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-11">
           <p className="text-[var(--text-color-primary-soft)] text-sm">
             Um jovem de 32 anos formado, primeiramente, em engenharia civil pela
             PUC-GO em 2017. Apaixonado em rock, basquete, filmes e animes. E que
@@ -42,20 +43,25 @@ const About = () => {
           </p>
         </div>
       </section>
-      <picture className="w-full my-28">
+      <picture className="w-full my-28 flex justify-center items-center">
         <Image
-          className="object-cover w-full"
+          className="object-cover w-72 lg:hidden"
+          src={timelineMobile}
+          alt="timeline dev"
+        />
+        <Image
+          className="object-cover w-full hidden lg:block"
           src={timeline}
           alt="timeline dev"
         />
       </picture>
       <section className="flex flex-col justify-center items-start gap-6 w-full">
         <h3 className="font-bold text-2xl">Habilidades</h3>
-        <div className=" flex flex-row justify-between items-center w-full">
+        <div className=" flex flex-row flex-wrap justify-start items-center w-full gap-4">
           {devStacks &&
             devStacks.map((stack, index: number) => (
               <Image
-                className="w-17 h-16"
+                className="lg:w-16 lg:h-16 w-12 h-11 md:w-14 md:h-13"
                 key={index}
                 src={stack}
                 alt="stack dev"
