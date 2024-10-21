@@ -16,7 +16,7 @@ export default function Home() {
           <ProjectCardHome data={projects[0]} />
           <ProjectCardHome data={projects[1]} />
           <ProjectCardHome data={projects[2]} />
-          <ProjectCardHome data={projects[3]} />
+          <ProjectCardHome data={projects[4]} />
         </div>
       </section>
     </main>

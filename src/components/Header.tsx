@@ -29,7 +29,7 @@ const Header = () => {
             target="_blank"
             rel="noreferrer noopener"
             className="nav-link"
-            href="/CV-Dev-Paulo-Bruno.pdf"
+            href="/CV Paulo Bruno.pdf"
           >
             CV
           </Link>

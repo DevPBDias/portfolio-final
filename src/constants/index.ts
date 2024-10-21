@@ -6,16 +6,19 @@ import html from "../../public/assets/icons/Html 5.png";
 import js from "../../public/assets/icons/JavaScript.png";
 import mongo from "../../public/assets/icons/Mongo Db.png";
 import next from "../../public/assets/icons/Next.js.png";
+import figma from "../../public/assets/icons/figma.png";
+import git from "../../public/assets/icons/git.png";
+import sass from "../../public/assets/icons/sass.png";
 import node from "../../public/assets/icons/Nodejs.png";
 import react from "../../public/assets/icons/React.png";
 import tailwind from "../../public/assets/icons/Tailwind CSS.png";
 import ts from "../../public/assets/icons/TypeScript.png";
 import styled from "../../public/assets/icons/Styled.png";
-import oleImg from '../../public/assets/images/ole.png'
-import coachImg from '../../public/assets/images/coach.png'
+import oleImg from '../../public/assets/gifs/olemida.gif'
+import coachImg from '../../public/assets/gifs/maxtrainning.gif'
 import recipeApp from '../../public/assets/images/recipeApp.png'
 import trivia from '../../public/assets/images/trivia.png'
-import trybetunes from '../../public/assets/images/trybetunes.png'
+import trybetunes from '../../public/assets/gifs/Trybetunes.gif'
 import walletPage from '../../public/assets/images/walletPage.png'
 import trailersApp from '../../public/assets/images/trailersApp.png'
 import { StaticImageData } from "next/image";
@@ -52,7 +55,7 @@ export const iconsHeader: IconsHeader[] = [
 ]
 
 export const devStacks: StaticImageData[] = [
-    react, next, node, js, css, html, mongo, ts, tailwind, styled
+    react, next, node, js, css, html, mongo, ts, tailwind, styled, sass, figma, git
 ]
 
 export const projects: ProjectData[] = [
@@ -75,7 +78,7 @@ export const projects: ProjectData[] = [
         inGroup: false,
         description: 'Site de vendas responsivo do Max Training em que apresenta depoimentos e seus serviços.',
         image: coachImg,
-        link: 'https://www.treinadorevertinho.com.br/maxtrainingperformance',
+        link: 'https://max-training-lp.vercel.app/maxtrainingperformance',
         techs: [ 'React js', "Javascript", 'Typescript', 'Styled-components']
     },
     {
@@ -83,7 +86,7 @@ export const projects: ProjectData[] = [
         name: 'App de trailers',
         year: 2024,
         type: 'Pessoal',
-        description: 'Projeto pessoal de um mockup de UX Design feito por mim. Foi desenvolvido um app mobile em que o usuário faz login, edita suas informações e navega por filmes, series e animes',
+        description: 'Projeto pessoal de um mockup de UX/UI Design feito por mim. Foi desenvolvido um app mobile em que o usuário faz login, edita suas informações e navega por filmes, series e animes',
         image: trailersApp,
         inGroup: false,
         link: 'https://github.com/DevPBDias/app-trailers',
@@ -102,14 +105,14 @@ export const projects: ProjectData[] = [
     },
     {
         id: 5,
-        name: 'Trybetunes',
-        year: 2023,
-        type: 'Trybe',
+        name: 'TrybeTunes Reworked',
+        year: 2024,
+        type: 'Pessoal',
         description: 'Foi desenvolvida uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.',
         image: trybetunes,
         inGroup: false,
-        link: 'https://github.com/DevPBDias/Trybetunes-TS',
-        techs: [ 'React js', "Javascript", 'Typescript', 'Tailwind Css']
+        link: 'https://github.com/DevPBDias/trybetunes-reworked',
+        techs: [ 'React js', "Next Js", 'Typescript', 'Scss', 'React-Hook-Form', 'Zod']
     },
     {
         id: 6,

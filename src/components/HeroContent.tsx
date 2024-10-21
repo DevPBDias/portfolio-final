@@ -16,7 +16,7 @@ const HeroContent = () => {
         target="_blank"
         rel="noreferrer noopener"
         className="flex justify-center items-center bg-[var(--secondary)] 2xl:text-xl font-bold text-[var(--text-color-secondary)] w-full sm:w-24 py-1 lg:px-7 lg:py-1 rounded-lg shadow-sm mt-5 ml- lg:mt-9"
-        href="/CV-Dev-Paulo-Bruno.pdf"
+        href="/CV Paulo Bruno.pdf"
       >
         Ler CV
       </Link>
